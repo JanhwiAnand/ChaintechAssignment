@@ -1,0 +1,203 @@
+/* importing font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+/* universal selector used */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: black;
+}
+/*styling a navigation bar */
+nav{
+    display: flex;
+    justify-content:space-around; 
+}
+nav img{
+    width:120px;
+    margin-top: 0px;
+    margin-left: 260px;
+   
+}
+nav ul li{
+    padding:20px;
+    display: inline;
+    list-style: none;
+    transition: 1ms ease-in-out;
+}
+.nav-links{
+    margin-top: 30px;
+    flex-basis:730px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    transition: 5ms; 
+    font-weight: bolder;
+}
+
+a:hover{
+    color:rgb(7, 225, 7);
+    /* on taking the cursor to any link, it must become green */
+}
+/* styling the header section */
+header h1{
+    font-size: 6.5rem;
+    color:white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header button{
+    font-size: 1.2rem;
+    width: 180px;
+    font-weight: bold;
+   margin-left: 760px;
+   margin-top:30px;
+   margin-bottom: 30px;
+   
+}
+.text{
+    background: linear-gradient(to right,rgb(191, 255, 0),rgb(17, 165, 0));
+    background-clip:text;
+    color:transparent;
+}
+header p{
+    color:white;
+    text-align: center;
+    margin-top:10px;
+    font-weight: 500;
+    
+    
+}
+/* the content and the cards added in the section part */
+section{
+    background-color: white;
+    
+}
+h2{
+    padding-top:50px;
+    margin-left:140px;
+    font-size: 1.9rem;
+}
+section p{
+    margin-left: 140px;
+    font-weight: bold;
+    margin-bottom:20px;
+    color:rgb(56, 55, 55)
+}
+.main{
+    padding-bottom:40px;
+    display:flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   align-items: center;
+    gap:20px;
+    
+}
+   
+.cards{
+    width:20%;
+    border: 3px solid black;
+    border-radius: 10px;
+    
+}
+.title{  
+    border-bottom:3px solid black;
+}
+.title h3{
+   
+    padding:10px;
+}
+.img img{
+    width:60%;
+    margin-left: 60px;   /*To place the image in center*/
+    margin-bottom: 0;
+    
+}
+.img{ 
+    border-bottom:3px solid black;
+}
+.desc{
+    text-align: center;
+    margin-bottom:30px; 
+    margin-top:30px;   
+}
+.button{
+    padding:10px;
+    margin-left: 170px;
+}
+button{
+    border-radius: 20px;
+    padding:10px;    
+    width:100px;
+    font-weight: bold;
+    border:3px solid black;
+    
+}
+button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer img{
+    
+    width:200px;
+    
+}
+.borderline{
+    width:80%;
+    height:1px;   
+    border-bottom:0 none;
+    background-color: white;
+   margin-top:20px;
+
+}
+.footpara{
+    color:white;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+/* Media query used for different devices making the website responsive */
+@media screen and (max-width:991px){
+    .cards{
+        width:100%;
+        flex-direction: column;
+        margin:20px
+    }
+
+ }
+@media screen and (max-width:767px)
+{
+    
+    
+   li{
+        
+        overflow: initial;
+        display:block;
+        margin-right:180px;
+
+       
+    }
+    header button{
+        margin-right:80px;
+        
+    }
+    header h1{
+        font-size: 1.5rem;
+
+    }
+}  
